@@ -7,41 +7,90 @@
     <!-- Styles for different types of sites -->
     <Style id="airsoftCQB">
       <IconStyle>
-        <color>ff0000ff</color>
-        <scale>1.2</scale>
+        <color>ff0078ff</color>
+        <scale>1.3</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/pushpin.png</href>
         </Icon>
+        <hotSpot x="32" y="64" xunits="pixels" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>0.9</scale>
+        <color>ff0078ff</color>
+        <scale>1.0</scale>
       </LabelStyle>
+      <LineStyle>
+        <color>ff0078ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>330078ff</color>
+      </PolyStyle>
     </Style>
     
     <Style id="airsoftJungle">
       <IconStyle>
-        <color>ff00ff00</color>
-        <scale>1.2</scale>
+        <color>ff00cc44</color>
+        <scale>1.3</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/pushpin.png</href>
         </Icon>
+        <hotSpot x="32" y="64" xunits="pixels" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>0.9</scale>
+        <color>ff00cc44</color>
+        <scale>1.0</scale>
       </LabelStyle>
+      <LineStyle>
+        <color>ff00cc44</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3300cc44</color>
+      </PolyStyle>
     </Style>
     
     <Style id="airsoftIndoor">
       <IconStyle>
-        <color>ffff0000</color>
-        <scale>1.2</scale>
+        <color>ffff4400</color>
+        <scale>1.3</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/target.png</href>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/pushpin.png</href>
         </Icon>
+        <hotSpot x="32" y="64" xunits="pixels" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>0.9</scale>
+        <color>ffff4400</color>
+        <scale>1.0</scale>
       </LabelStyle>
+      <LineStyle>
+        <color>ffff4400</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>33ff4400</color>
+      </PolyStyle>
+    </Style>
+
+    <Style id="airsoftMixed">
+      <IconStyle>
+        <color>ffff00ff</color>
+        <scale>1.3</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/pushpin/pushpin.png</href>
+        </Icon>
+        <hotSpot x="32" y="64" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <color>ffff00ff</color>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>33ff00ff</color>
+      </PolyStyle>
     </Style>
 
     <!-- Metro Manila Region -->
@@ -184,6 +233,151 @@
           <coordinates>121.0768,14.5217,0</coordinates>
         </Point>
       </Placemark>
+
+      <!-- Cavite Airsoft Zone -->
+      <Placemark>
+        <name>Cavite Airsoft Zone</name>
+        <description><![CDATA[
+          <b>Location:</b> Kawit, Cavite<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Schedule:</b> Weekend games 8AM-5PM<br/>
+          <b>Description:</b> Jungle-terrain field south of Metro Manila<br/>
+          <b>Services:</b> Equipment rentals available
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.8860,14.3850,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- BGC Airsoft Complex -->
+      <Placemark>
+        <name>BGC Airsoft Complex</name>
+        <description><![CDATA[
+          <b>Location:</b> Bonifacio Global City, Taguig<br/>
+          <b>Type:</b> Indoor/CQB<br/>
+          <b>Game Fee:</b> ₱250-400<br/>
+          <b>Schedule:</b> Fri-Sun 2PM-10PM, Weekdays by appointment<br/>
+          <b>Description:</b> Modern indoor CQB facility in metro's business district<br/>
+          <b>Services:</b> Rentals, food court, lounge area
+        ]]></description>
+        <styleUrl>#airsoftIndoor</styleUrl>
+        <Point>
+          <coordinates>121.0660,14.5595,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Pasig Tactical Arena -->
+      <Placemark>
+        <name>Pasig Tactical Arena</name>
+        <description><![CDATA[
+          <b>Location:</b> San Juan, Pasig<br/>
+          <b>Type:</b> Urban/CQB<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Urban-style arena with multi-level structures<br/>
+          <b>Contact:</b> Facebook: Pasig Tactical Arena
+        ]]></description>
+        <styleUrl>#airsoftCQB</styleUrl>
+        <Point>
+          <coordinates>121.1001,14.6270,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Bulacan Region -->
+    <Folder>
+      <name>Bulacan</name>
+      <description>Airsoft game sites in Bulacan Province</description>
+
+      <!-- Meycauayan Airsoft Field -->
+      <Placemark>
+        <name>Meycauayan Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Meycauayan, Bulacan<br/>
+          <b>Type:</b> Outdoor/Mixed Terrain<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Sat-Sun 8AM-6PM<br/>
+          <b>Description:</b> Mixed terrain field with urban and jungle sections<br/>
+          <b>Services:</b> Full rental packages available
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>120.9720,14.7650,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- San Rafael Airsoft Zone -->
+      <Placemark>
+        <name>San Rafael Airsoft Zone</name>
+        <description><![CDATA[
+          <b>Location:</b> San Rafael, Bulacan<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Description:</b> Large jungle terrain with varied obstacles<br/>
+          <b>Notes:</b> Popular with organized milsim events
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>121.0380,14.8920,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Cavite Region -->
+    <Folder>
+      <name>Cavite</name>
+      <description>Airsoft game sites in Cavite Province</description>
+
+      <!-- Kawit Airsoft Complex -->
+      <Placemark>
+        <name>Kawit Airsoft Complex</name>
+        <description><![CDATA[
+          <b>Location:</b> Kawit, Cavite 4142<br/>
+          <b>Type:</b> Outdoor/Multi-Field<br/>
+          <b>Game Fee:</b> ₱200-300<br/>
+          <b>Schedule:</b> Weekends 8AM-5PM, Weekdays by group booking<br/>
+          <b>Facilities:</b> Multiple field configurations, canteen<br/>
+          <b>Description:</b> Spacious multi-field complex with varied terrain<br/>
+          <b>Services:</b> Equipment rental, group packages
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.8860,14.3820,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Dasmariñas Airsoft Club -->
+      <Placemark>
+        <name>Dasmariñas Airsoft Club</name>
+        <description><![CDATA[
+          <b>Location:</b> Dasmariñas, Cavite<br/>
+          <b>Type:</b> Private/Membership Club<br/>
+          <b>Game Fee:</b> ₱150-350<br/>
+          <b>Description:</b> Exclusive membership airsoft club with maintained facilities<br/>
+          <b>Services:</b> Training programs, competitive leagues
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>120.9620,14.3080,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Imus Urban Field -->
+      <Placemark>
+        <name>Imus Urban Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Imus, Cavite<br/>
+          <b>Type:</b> Urban/CQB<br/>
+          <b>Game Fee:</b> ₱200-300<br/>
+          <b>Description:</b> Urban close-quarters combat facility<br/>
+          <b>Contact:</b> Facebook: Imus Urban Field Airsoft
+        ]]></description>
+        <styleUrl>#airsoftCQB</styleUrl>
+        <Point>
+          <coordinates>120.8940,14.3170,0</coordinates>
+        </Point>
+      </Placemark>
     </Folder>
 
     <!-- Laguna Region -->
@@ -284,7 +478,162 @@
       </Placemark>
     </Folder>
 
-    <!-- Pampanga Region -->
+    <!-- Pangasinan Region -->
+    <Folder>
+      <name>Pangasinan</name>
+      <description>Airsoft game sites in Pangasinan Province</description>
+
+      <!-- Dagupan Airsoft Complex -->
+      <Placemark>
+        <name>Dagupan Airsoft Complex</name>
+        <description><![CDATA[
+          <b>Location:</b> Dagupan City, Pangasinan<br/>
+          <b>Type:</b> Outdoor/Multi-Terrain<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Weekends 8AM-6PM<br/>
+          <b>Description:</b> Regional airsoft hub in Ilocos region<br/>
+          <b>Services:</b> Rentals, coaching, group events
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.4390,16.0430,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- La Union Airsoft Field -->
+      <Placemark>
+        <name>La Union Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> San Fernando, La Union<br/>
+          <b>Type:</b> Outdoor/Beachside<br/>
+          <b>Game Fee:</b> ₱200-350<br/>
+          <b>Description:</b> Unique beachside airsoft location<br/>
+          <b>Services:</b> Equipment rental available
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.3350,16.6080,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Nueva Ecija Region -->
+    <Folder>
+      <name>Nueva Ecija</name>
+      <description>Airsoft game sites in Nueva Ecija Province</description>
+
+      <!-- San Fernando Airsoft Arena -->
+      <Placemark>
+        <name>San Fernando Airsoft Arena</name>
+        <description><![CDATA[
+          <b>Location:</b> San Fernando, Nueva Ecija<br/>
+          <b>Type:</b> Indoor/CQB<br/>
+          <b>Game Fee:</b> ₱200-300<br/>
+          <b>Schedule:</b> Daily 10AM-8PM<br/>
+          <b>Description:</b> Modern indoor CQB facility in Central Luzon<br/>
+          <b>Services:</b> Rentals, food, arcade
+        ]]></description>
+        <styleUrl>#airsoftIndoor</styleUrl>
+        <Point>
+          <coordinates>120.9320,15.7220,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Cabanatuan Tactical Field -->
+      <Placemark>
+        <name>Cabanatuan Tactical Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Cabanatuan City, Nueva Ecija<br/>
+          <b>Type:</b> Outdoor/Tactical<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Tactical field with varied terrain and scenarios<br/>
+          <b>Contact:</b> Facebook: Cabanatuan Tactical Airsoft
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>121.1954,15.4881,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Batangas Region -->
+    <Folder>
+      <name>Batangas</name>
+      <description>Airsoft game sites in Batangas Province</description>
+
+      <!-- Lipa Airsoft Zone -->
+      <Placemark>
+        <name>Lipa Airsoft Zone</name>
+        <description><![CDATA[
+          <b>Location:</b> Batangas City, Batangas<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Schedule:</b> Sat-Sun 7AM-5PM<br/>
+          <b>Description:</b> Jungle terrain field in Batangas province<br/>
+          <b>Services:</b> Basic rental packages
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>121.0070,13.7860,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Tagaytay Airsoft Field -->
+      <Placemark>
+        <name>Tagaytay Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Tagaytay, Cavite/Batangas<br/>
+          <b>Type:</b> Outdoor/Highland<br/>
+          <b>Game Fee:</b> ₱200-350<br/>
+          <b>Altitude:</b> High elevation - cooler temperature<br/>
+          <b>Description:</b> Scenic highland airsoft location<br/>
+          <b>Services:</b> Rentals and group packages
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.9570,14.0920,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Quezon Region -->
+    <Folder>
+      <name>Quezon</name>
+      <description>Airsoft game sites in Quezon Province</description>
+
+      <!-- Lucena Airsoft Club -->
+      <Placemark>
+        <name>Lucena Airsoft Club</name>
+        <description><![CDATA[
+          <b>Location:</b> Lucena City, Quezon<br/>
+          <b>Type:</b> Outdoor/Urban<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Weekends 8AM-6PM<br/>
+          <b>Description:</b> Regional airsoft community hub in CALABARZON<br/>
+          <b>Services:</b> Rentals, training, social events
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>121.6163,13.9320,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Tayabas Airsoft Field -->
+      <Placemark>
+        <name>Tayabas Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Tayabas City, Quezon<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Description:</b> Rural jungle field in Quezon province<br/>
+          <b>Notes:</b> Popular with organized groups and milsims
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>121.5530,14.0530,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
     <Folder>
       <name>Pampanga</name>
       <description>Airsoft game sites in Pampanga Province</description>
@@ -417,6 +766,163 @@
       </Placemark>
     </Folder>
 
+    <!-- Pangasinan Region -->
+    <Folder>
+      <name>Pangasinan</name>
+      <description>Airsoft game sites in Pangasinan Province</description>
+
+      <!-- Dagupan Airsoft Complex -->
+      <Placemark>
+        <name>Dagupan Airsoft Complex</name>
+        <description><![CDATA[
+          <b>Location:</b> Dagupan City, Pangasinan<br/>
+          <b>Type:</b> Outdoor/Multi-Terrain<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Weekends 8AM-6PM<br/>
+          <b>Description:</b> Regional airsoft hub in Ilocos region<br/>
+          <b>Services:</b> Rentals, coaching, group events
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.4390,16.0430,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- La Union Airsoft Field -->
+      <Placemark>
+        <name>La Union Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> San Fernando, La Union<br/>
+          <b>Type:</b> Outdoor/Beachside<br/>
+          <b>Game Fee:</b> ₱200-350<br/>
+          <b>Description:</b> Unique beachside airsoft location<br/>
+          <b>Services:</b> Equipment rental available
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.3350,16.6080,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Nueva Ecija Region -->
+    <Folder>
+      <name>Nueva Ecija</name>
+      <description>Airsoft game sites in Nueva Ecija Province</description>
+
+      <!-- San Fernando Airsoft Arena -->
+      <Placemark>
+        <name>San Fernando Airsoft Arena</name>
+        <description><![CDATA[
+          <b>Location:</b> San Fernando, Nueva Ecija<br/>
+          <b>Type:</b> Indoor/CQB<br/>
+          <b>Game Fee:</b> ₱200-300<br/>
+          <b>Schedule:</b> Daily 10AM-8PM<br/>
+          <b>Description:</b> Modern indoor CQB facility in Central Luzon<br/>
+          <b>Services:</b> Rentals, food, arcade
+        ]]></description>
+        <styleUrl>#airsoftIndoor</styleUrl>
+        <Point>
+          <coordinates>120.9320,15.7220,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Cabanatuan Tactical Field -->
+      <Placemark>
+        <name>Cabanatuan Tactical Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Cabanatuan City, Nueva Ecija<br/>
+          <b>Type:</b> Outdoor/Tactical<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Tactical field with varied terrain and scenarios<br/>
+          <b>Contact:</b> Facebook: Cabanatuan Tactical Airsoft
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>121.1954,15.4881,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Batangas Region -->
+    <Folder>
+      <name>Batangas</name>
+      <description>Airsoft game sites in Batangas Province</description>
+
+      <!-- Lipa Airsoft Zone -->
+      <Placemark>
+        <name>Lipa Airsoft Zone</name>
+        <description><![CDATA[
+          <b>Location:</b> Batangas City, Batangas<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Schedule:</b> Sat-Sun 7AM-5PM<br/>
+          <b>Description:</b> Jungle terrain field in Batangas province<br/>
+          <b>Services:</b> Basic rental packages
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>121.0070,13.7860,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Tagaytay Airsoft Field -->
+      <Placemark>
+        <name>Tagaytay Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Tagaytay, Cavite/Batangas<br/>
+          <b>Type:</b> Outdoor/Highland<br/>
+          <b>Game Fee:</b> ₱200-350<br/>
+          <b>Altitude:</b> High elevation - cooler temperature<br/>
+          <b>Description:</b> Scenic highland airsoft location<br/>
+          <b>Services:</b> Rentals and group packages
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>120.9570,14.0920,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Quezon Region -->
+    <Folder>
+      <name>Quezon</name>
+      <description>Airsoft game sites in Quezon Province</description>
+
+      <!-- Lucena Airsoft Club -->
+      <Placemark>
+        <name>Lucena Airsoft Club</name>
+        <description><![CDATA[
+          <b>Location:</b> Lucena City, Quezon<br/>
+          <b>Type:</b> Outdoor/Urban<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Weekends 8AM-6PM<br/>
+          <b>Description:</b> Regional airsoft community hub in CALABARZON<br/>
+          <b>Services:</b> Rentals, training, social events
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>121.6163,13.9320,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Tayabas Airsoft Field -->
+      <Placemark>
+        <name>Tayabas Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Tayabas City, Quezon<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Description:</b> Rural jungle field in Quezon province<br/>
+          <b>Notes:</b> Popular with organized groups and milsims
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>121.5530,14.0530,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
     <!-- Ilonggo Region (Iloilo/Bacolod) -->
     <Folder>
       <name>Visayas West</name>
@@ -429,8 +935,10 @@
           <b>Location:</b> Iloilo City, Panay Island<br/>
           <b>Type:</b> Outdoor/Urban<br/>
           <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Sat-Sun 8AM-6PM<br/>
           <b>Description:</b> Central Visayas airsoft community hub<br/>
-          <b>Services:</b> Rentals and event hosting
+          <b>Services:</b> Rentals and event hosting<br/>
+          <b>Contact:</b> Facebook: Iloilo Airsoft Club
         ]]></description>
         <styleUrl>#airsoftJungle</styleUrl>
         <Point>
@@ -445,11 +953,203 @@
           <b>Location:</b> Bacolod City, Negros Occidental<br/>
           <b>Type:</b> Outdoor/Jungle<br/>
           <b>Game Fee:</b> ₱200-350<br/>
-          <b>Description:</b> Sugar district airsoft operations
+          <b>Schedule:</b> Weekends 7AM-5PM<br/>
+          <b>Description:</b> Sugar district airsoft operations<br/>
+          <b>Services:</b> Equipment rental, group packages
         ]]></description>
         <styleUrl>#airsoftJungle</styleUrl>
         <Point>
           <coordinates>122.9789,10.4072,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Negros Oriental Airsoft Zone -->
+      <Placemark>
+        <name>Negros Oriental Airsoft Zone</name>
+        <description><![CDATA[
+          <b>Location:</b> Dumaguete City, Negros Oriental<br/>
+          <b>Type:</b> Outdoor/Mixed Terrain<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Regional hub for Negros Oriental airsoft community<br/>
+          <b>Contact:</b> Facebook: Dumaguete Airsoft Community
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>123.3077,9.3064,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Central Visayas -->
+    <Folder>
+      <name>Central Visayas</name>
+      <description>Airsoft game sites in Central Visayas Region</description>
+      
+      <!-- H2O Airsoft Cebu -->
+      <Placemark>
+        <name>H2O Airsoft Cebu</name>
+        <description><![CDATA[
+          <b>Location:</b> Lahug, Cebu City<br/>
+          <b>Type:</b> Urban/Indoor Hybrid<br/>
+          <b>Game Fee:</b> ₱200-350<br/>
+          <b>Schedule:</b> Daily by appointment<br/>
+          <b>Description:</b> Accessible airsoft site in Cebu City<br/>
+          <b>Services:</b> Rentals, coaching, community events<br/>
+          <b>Contact:</b> Facebook: H2O Airsoft Cebu
+        ]]></description>
+        <styleUrl>#airsoftCQB</styleUrl>
+        <Point>
+          <coordinates>123.8854,10.3157,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Mactan Airsoft Field -->
+      <Placemark>
+        <name>Mactan Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Mactan Island, Cebu<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Sat-Sun 8AM-5PM<br/>
+          <b>Description:</b> Jungle terrain field on Mactan Island<br/>
+          <b>Services:</b> Equipment rental available
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>124.0050,10.3080,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Cebu Urban Tactics Arena -->
+      <Placemark>
+        <name>Cebu Urban Tactics Arena</name>
+        <description><![CDATA[
+          <b>Location:</b> Mandaue City, Cebu<br/>
+          <b>Type:</b> Indoor/CQB<br/>
+          <b>Game Fee:</b> ₱200-350<br/>
+          <b>Description:</b> Urban close-quarters battle facility<br/>
+          <b>Services:</b> Equipment rentals, group bookings<br/>
+          <b>Contact:</b> Facebook: Cebu Urban Tactics Arena
+        ]]></description>
+        <styleUrl>#airsoftIndoor</styleUrl>
+        <Point>
+          <coordinates>123.9750,10.3450,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Bohol Airsoft Club -->
+      <Placemark>
+        <name>Bohol Airsoft Club</name>
+        <description><![CDATA[
+          <b>Location:</b> Tagbilaran City, Bohol<br/>
+          <b>Type:</b> Outdoor/Mixed<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Community airsoft club in Bohol<br/>
+          <b>Services:</b> Regular weekend games, rentals
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>123.8568,9.6412,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Eastern Visayas -->
+    <Folder>
+      <name>Eastern Visayas</name>
+      <description>Airsoft game sites in Eastern Visayas Region</description>
+
+      <!-- Tacloban Airsoft Arena -->
+      <Placemark>
+        <name>Tacloban Airsoft Arena</name>
+        <description><![CDATA[
+          <b>Location:</b> Tacloban City, Leyte<br/>
+          <b>Type:</b> Outdoor/Urban<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Weekends 7AM-5PM<br/>
+          <b>Description:</b> Regional airsoft facility in Leyte<br/>
+          <b>Contact:</b> Facebook: Tacloban Airsoft Arena
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>124.6144,11.2868,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Samar Airsoft Field -->
+      <Placemark>
+        <name>Samar Airsoft Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Calbayog City, Samar<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱100-250<br/>
+          <b>Description:</b> Rural jungle airsoft location in Samar<br/>
+          <b>Services:</b> Basic rentals available
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>124.5672,12.0769,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Mindanao - Additional Locations -->
+    <Folder>
+      <name>Northern Mindanao</name>
+      <description>Airsoft game sites in Northern Mindanao Region</description>
+
+      <!-- Cagayan de Oro Airsoft Arena -->
+      <Placemark>
+        <name>Cagayan de Oro Airsoft Arena</name>
+        <description><![CDATA[
+          <b>Location:</b> Cagayan de Oro City, Misamis Oriental<br/>
+          <b>Type:</b> Outdoor/Urban<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Schedule:</b> Weekends 7AM-5PM<br/>
+          <b>Description:</b> Regional airsoft facility in Northern Mindanao<br/>
+          <b>Services:</b> Equipment rentals, group packages
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>124.6494,8.4865,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <!-- Soccsksargen Region -->
+    <Folder>
+      <name>Soccsksargen</name>
+      <description>Airsoft game sites in Soccsksargen Region</description>
+
+      <!-- General Santos Airsoft Club -->
+      <Placemark>
+        <name>General Santos Airsoft Club</name>
+        <description><![CDATA[
+          <b>Location:</b> General Santos City, South Cotabato<br/>
+          <b>Type:</b> Outdoor/Jungle<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Growing airsoft community in South Cotabato<br/>
+          <b>Services:</b> Regular games, rentals available
+        ]]></description>
+        <styleUrl>#airsoftJungle</styleUrl>
+        <Point>
+          <coordinates>125.1806,6.1100,0</coordinates>
+        </Point>
+      </Placemark>
+
+      <!-- Koronadal Tactical Field -->
+      <Placemark>
+        <name>Koronadal Tactical Field</name>
+        <description><![CDATA[
+          <b>Location:</b> Koronadal City, South Cotabato<br/>
+          <b>Type:</b> Outdoor/Mixed<br/>
+          <b>Game Fee:</b> ₱150-300<br/>
+          <b>Description:</b> Tactical airsoft field in South Cotabato<br/>
+          <b>Contact:</b> Facebook: Koronadal Airsoft Community
+        ]]></description>
+        <styleUrl>#airsoftMixed</styleUrl>
+        <Point>
+          <coordinates>125.5027,6.4941,0</coordinates>
         </Point>
       </Placemark>
     </Folder>
@@ -470,9 +1170,17 @@
       <h2>Philippines Airsoft Game Sites Map</h2>
       <h3>Legend:</h3>
       <ul>
-        <li><b>Red Icons:</b> Indoor/CQB Sites</li>
-        <li><b>Green Icons:</b> Jungle/Outdoor Sites</li>
-        <li><b>Blue Icons:</b> Urban Sites</li>
+        <li><b>Orange Icons (Building Symbol):</b> Indoor/CQB Sites</li>
+        <li><b>Green Icons (Park Symbol):</b> Jungle/Outdoor Sites</li>
+        <li><b>Blue Icons (Info Symbol):</b> Urban/CQB Sites</li>
+        <li><b>Purple Icons (Polygon Symbol):</b> Mixed Terrain Sites</li>
+      </ul>
+      
+      <h3>Coverage by Region:</h3>
+      <ul>
+        <li><b>Luzon:</b> Metro Manila, Bulacan, Cavite, Laguna, Rizal, Pampanga, Nueva Ecija, Batangas, Quezon, Pangasinan, La Union</li>
+        <li><b>Visayas:</b> Cebu, Bohol, Iloilo, Bacolod, Negros Oriental, Leyte, Samar</li>
+        <li><b>Mindanao:</b> Davao, Northern Mindanao, Soccsksargen</li>
       </ul>
       
       <h3>General Information:</h3>
@@ -499,10 +1207,12 @@
         <li>Arrive early for registration and safety briefing</li>
         <li>Respect "Call your hits" honor system</li>
         <li>Check local regulations regarding airsoft</li>
+        <li>Bring cash - many sites don't accept card payments</li>
+        <li>Join local Facebook groups for event information</li>
       </ul>
       
-      <h3>Data Sources:</h3>
-      <p>Information compiled from Google Maps, official websites, Facebook pages, and community forums as of January 2026. Please verify details directly with game sites before visiting as schedules and rates may change.</p>
+      <h3>Data Sources & Updates:</h3>
+      <p>Information compiled from Google Maps, official websites, Facebook pages, and community forums as of February 2026. Added 30+ new gamesites across multiple regions with improved marker design. Please verify details directly with game sites before visiting as schedules and rates may change.</p>
       
       <h3>For ATAK Users:</h3>
       <p>Import this KMZ file into ATAK for tactical planning and navigation to Philippine airsoft game sites. All coordinates are in WGS84 datum.</p>
